@@ -60,3 +60,34 @@
     border: .25vmin solid black;
     border-radius: 8px;
 }
+
+.button-section {
+    text-align: center;
+    margin-top: -10vh;
+    display: none;
+}
+
+.side-button {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+button {
+    padding: 1%;
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(170, 236, 170);
+}
+
+@media (max-width: 1000px) {
+    .button-section {
+        display: block;
+    }
+
+    .body {
+        min-height: 90vh;
+    }
+} 

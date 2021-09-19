@@ -116,6 +116,34 @@ else{
     hiscoreBox.innerHTML = "HiScore: " + hiscore;
 }
 
+const upButton = () => {
+    inputDir = {x: 0, y: 1}
+    moveSound.play();
+    inputDir.x = 0;
+    inputDir.y = -1;
+}
+
+const leftButton = () => {
+    inputDir = {x: 0, y: 1}
+    moveSound.play();
+    inputDir.x = -1;
+    inputDir.y = 0;
+}
+
+const rightButton = () => {
+    inputDir = {x: 0, y: 1}
+    moveSound.play();
+    inputDir.x = 1;
+    inputDir.y = 0;
+}
+
+const downButton = () => {
+    inputDir = {x: 0, y: 1}
+    moveSound.play();
+    inputDir.x = 0;
+    inputDir.y = 1;
+}
+
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e =>{
     inputDir = {x: 0, y: 1} // Start the game
